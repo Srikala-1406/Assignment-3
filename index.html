@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="social-login">
+            <button class="facebook"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Login with Facebook</button>
+            <button class="twitter"><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;Login with Twitter</button>
+        </div>
+        <h4> Login with email </h4>
+
+        <div class="email-login">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <button type="submit" onclick="validateForm()">LOGIN</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+        <div class="signup">
+            <p>Don't have an account?</p>
+            <p><a href="#"><u>SIGN UP NOW</u></a></p>
+        </div>
+    </div>
+    
+    <!-- Link your JS file here -->
+    <script src="index.js"></script>
+</body>
+</html>
